@@ -1,6 +1,6 @@
 .moe-top-bar {
     -fx-padding: 0.75em 1em 0.75em 1em;
-    -fx-background-color: hsb(0, 0%, 50%), rgb(24, 24, 37);
+    -fx-background-color: rgb(24, 24, 37);
     -fx-background-insets: 0 0 0 0, 0 0 1 0;
 }
 .moe-top-bar-buttons {
@@ -51,7 +51,7 @@
 .moe-find-panel {
     -fx-padding: 0.5em 1em 0.5em 1em;
     -fx-border-style: solid inside;
-    -fx-border-color: hsb(0, 0%, 70%);
+    -fx-border-color: rgb(24, 24, 37);
     -fx-border-width: 0 0 1 0;
     -fx-border-insets: 0 5 0 5;
 }
@@ -76,7 +76,8 @@
     -fx-alignment: center-right;
     -fx-graphic-text-gap: 0;
     -fx-label-padding: 0 2 0 0;
-    -fx-background-color: rgb(24, 24, 37)	, rgb(255, 255, 255);
+    /* TODO */
+    -fx-background-color: rgb(24, 24, 237), rgb(255, 255, 255);
     /* Note there is an inset of 3 pixels to right of this item,
       but it's added in code */
 }
@@ -108,7 +109,8 @@
     -fx-background-insets: 0;
 }
 .moe-editor-pane:bj-uncompiled .moe-line-label {
-    -fx-background-color: gray, hsb(0, 0%, 75%);
+    /* TODO */
+    -fx-background-color: green, hsb(0, 0%, 75%);
     -fx-background-insets: -1 0 -1 0, -1 1 -1 0;
 }
 .moe-line-label:bj-breakpoint, .moe-line-label:bj-step-mark {
@@ -134,7 +136,7 @@
     /* -rtfx-underline-width: 2; */
 }
 .moe-find-field:bj-no-find-result {
-    -fx-text-fill: red;
+    -fx-text-fill: rgb(200, 50, 50);
 }
 /* Don't show when printing */
 .moe-editor-pane:bj-screen .moe-bracket-highlight {

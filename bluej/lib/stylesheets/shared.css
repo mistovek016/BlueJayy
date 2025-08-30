@@ -1,6 +1,8 @@
 .stop-icon .octagon {
     -fx-fill: darkred;
 }
+
+/* TODO */
 .stop-icon .label {
     -fx-text-fill: white;
     -fx-font-size: 6px;

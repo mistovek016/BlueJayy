@@ -169,9 +169,15 @@
     -fx-focus-color: transparent;
 }
 
+/* TODO */
+.scroll-bar:vertical {
+    -fx-background-color: rgba(30, 30, 46, 0.8) !important;
+}
+
 /* Restyle scroll bar, see http://stackoverflow.com/questions/13200439/javafx2-2-making-a-scrollbar-with-transparent-background for more: */
 .frame-editor-scroll-pane .scroll-bar:vertical {
   -fx-background-color: class-frame;
+  /* -fx-background-color: orange; */
 }
 /* And avoid the rule impacting scroll on code completion: */
 .frame-editor-scroll-pane .code-overlay-pane .scroll-bar:vertical {
@@ -924,6 +930,8 @@
 .scroll-pane {
    -fx-padding: 0 !important;
    -fx-background-radius: 0 !important;
+   /* TODO */
+   /* -fx-background-color: green; */
 }
 
 .documentation-text {

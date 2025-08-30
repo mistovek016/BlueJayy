@@ -1,9 +1,10 @@
 .banner-undo-delete {
-    -fx-background-color: orange;
-    -fx-text-fill: black;
+    /* TODO */
+    -fx-background-color: green;
+    -fx-text-fill: white;
     -fx-padding: 0.5em 2em 0.5em 2em;
     -fx-border-width: 0 0 2 0;
-    -fx-border-color: black;
+    -fx-border-color: white;
 }
 
 .banner-undo-delete .banner-undo-delete-text {

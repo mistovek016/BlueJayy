@@ -1,9 +1,9 @@
 .java-error {
     -fx-font-family: "Source Sans Pro";
-    -fx-fill: white;
+    -fx-fill: rgb(205, 214, 244);
 }
 .java-error-popup {
-    -fx-background-color: derive(darkslategrey, -50%);
+    -fx-background-color: derive(rgb(17, 17, 27), -50%);
     /* TextFlow seems to have vertical padding built-in, so we mainly add horizontal padding: */
     -fx-padding: 2px 5px 2px 5px;
     -fx-background-radius: 5px;
