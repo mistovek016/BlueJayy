@@ -21,12 +21,13 @@
  */
 package bluej.parser;
 
-import com.google.common.collect.ImmutableSet;
-import threadchecker.OnThread;
-import threadchecker.Tag;
-
 import java.util.Arrays;
 import java.util.stream.Collectors;
+
+import com.google.common.collect.ImmutableSet;
+
+import threadchecker.OnThread;
+import threadchecker.Tag;
 
 /**
  * This is a replacement for the Token class from jedit.
@@ -43,7 +44,8 @@ public class Token
     @OnThread(Tag.Any)
     public static enum TokenType
     {
-        DEFAULT, COMMENT_NORMAL, COMMENT_JAVADOC, COMMENT_SPECIAL, KEYWORD1, KEYWORD2, KEYWORD3, PRIMITIVE, STRING_LITERAL, CHAR_LITERAL, LABEL, INVALID, END;
+        DEFAULT, COMMENT_NORMAL, COMMENT_JAVADOC, COMMENT_SPECIAL, KEYWORD1, KEYWORD2, KEYWORD3, PRIMITIVE, STRING_LITERAL, CHAR_LITERAL, NUMBER, OPERATOR, CLASS, METHOD, LABEL, INVALID, END;
+        // DEFAULT, COMMENT_NORMAL, COMMENT_JAVADOC, COMMENT_SPECIAL, KEYWORD1, KEYWORD2, KEYWORD3, PRIMITIVE, STRING_LITERAL, CHAR_LITERAL, LABEL, INVALID, END;
 
         public String getCSSClass()
         {

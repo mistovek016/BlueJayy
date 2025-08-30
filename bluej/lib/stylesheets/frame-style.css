@@ -89,8 +89,8 @@
     -fx-padding: 0 0 0 0;
 }
 .frame:bj-java-preview {
-    -fx-background-color: white;
-    -fx-border-color: white;
+    -fx-background-color: rgb(24, 24, 37); /*YEABOI*/ /*white*/;
+    -fx-border-color: rgb(24, 24, 37); /*YEABOI*/ /*white*/;
 }
 .frame:bj-debug-before {
     -fx-border-radius: 0 0 5 5;
@@ -122,7 +122,7 @@
     -bj-background-color: frame-canvas-non-empty;
 }
 .frame-canvas:bj-empty:bj-java-preview, .frame-canvas:bj-non-empty:bj-java-preview {
-    -bj-background-color: white;
+    -bj-background-color: rgb(24, 24, 37); /*YEABOI*/ /*white*/
     -bj-border-color: frame-canvas-border-java;
 }
 
@@ -132,7 +132,7 @@
     -fx-border-radius: 5 5 0 0;
     -fx-border-width: 0;
     -fx-border-style: solid outside;
-    -fx-background-color: white;
+    -fx-background-color: rgb(24, 24, 37); /*YEABOI*/ /*white*/ 
     -fx-background-insets: -2 1 0 2.2em;
     -fx-border-insets: 0 0 0 2.2em;
 }
@@ -228,8 +228,8 @@
 
 .class-frame .inherited-method-frame:bj-java-preview, .class-frame .import-frame:bj-java-preview, .class-frame .import-field:bj-java-preview,
 .interface-frame .inherited-method-frame:bj-java-preview, .interface-frame .import-frame:bj-java-preview, .interface-frame .import-field:bj-java-preview {
-    -fx-border-color: white;
-    -fx-background-color: white;
+    -fx-border-color: rgb(24, 24, 37); /*YEABOI*/ /*white*/;
+    -fx-background-color: rgb(24, 24, 37); /*YEABOI*/ /*white*/;
 }
 
 .inherited-method-caption, .inherited-method-slot {

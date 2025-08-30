@@ -468,6 +468,8 @@ public class JavaSyntaxView implements ReparseableDocument, LineDisplayListener
             // treat """ as a single token, which will work fine as it will either be first or last on the line
             // and thus there's no non-whitespace string content to highlight as a string.
             Token nextToken = tas.tokenLinkedList();
+            boolean prevDot = false;
+            String operatorList = "+-*/%++-- =+=-=*=/=%=&=|=^=>>=<<= ==!=>=<=>< &&||!";
             while (nextToken.id != TokenType.END)
             {
                 String tokenContent = lineContent.subSequence(curPosInLine, curPosInLine + nextToken.length).toString();
@@ -480,10 +482,25 @@ public class JavaSyntaxView implements ReparseableDocument, LineDisplayListener
                     else
                         textBlockRelation = TextBlockRelation.OPENING_LINE_ONLY;
                 }
+                
                 List<String> tokenStyle = Collections.singletonList((textBlockRelation != TextBlockRelation.OPENING_LINE_ONLY && textBlockRelation != TextBlockRelation.NONE ? TokenType.STRING_LITERAL : nextToken.id).getCSSClass());
-                lineStyle.add(new StyledSegment(tokenStyle, tokenContent));
+                if (tokenContent.matches("\\d+"))
+                    lineStyle.add(new StyledSegment(List.of(TokenType.NUMBER.getCSSClass()), tokenContent));
+                else if (operatorList.contains(tokenContent))
+                    lineStyle.add(new StyledSegment(List.of(TokenType.OPERATOR.getCSSClass()), tokenContent));
+                else if (Character.isUpperCase(tokenContent.charAt(0)))
+                    lineStyle.add(new StyledSegment(List.of(TokenType.CLASS.getCSSClass()), tokenContent));
+                else if (prevDot && Character.isLowerCase(tokenContent.charAt(0)))
+                    lineStyle.add(new StyledSegment(List.of(TokenType.METHOD.getCSSClass()), tokenContent));
+                else
+                    lineStyle.add(new StyledSegment(tokenStyle, tokenContent));
+
+                
+                
                 curPosInLine += nextToken.length;
                 nextToken = nextToken.next;
+                prevDot = tokenContent.equals(".");
+                
             }
             // Very important to add a blank item if the line is blank, otherwise the line will get collapsed
             // in the display:

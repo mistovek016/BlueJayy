@@ -1,11 +1,11 @@
 .token-keyword1 {
-    -fx-fill: #660033;
+    -fx-fill: rgb(249, 226, 175);
 }
 .token-keyword2 {
-    -fx-fill: #cc0000;
+    -fx-fill: rgb(249, 226, 175);
 }
 .token-keyword3 {
-    -fx-fill: #006699;
+    -fx-fill: rgb(243, 139, 168);
 }
 
 .token-comment-normal {
@@ -17,12 +17,29 @@
 .token-comment-special {
     -fx-fill: #ee00bb;
 }
-
+/*Courtesy of mistovek016*/
+.token-class {
+    -fx-fill: rgb(245, 224, 220);
+}
+.token-method {
+    -fx-fill: rgb(137, 180, 250);
+}
+.token-operator {
+    -fx-fill: rgb(148, 226, 213);
+}
+.token-number {
+    -fx-fill: rgb(250, 179, 135);
+}
+/*yupp that's it*/
 .token-primitive {
-    -fx-fill: #cc0000;
+    -fx-fill: rgb(249, 226, 175);
 }
 .token-string-literal {
-    -fx-fill: #006600;
+    -fx-fill: rgb(166, 227, 161);
+}
+
+.token-char-literal {
+    -fx-fill: rgb(166, 227, 161);
 }
 .token-label {
     -fx-fill: #999999;
@@ -32,13 +49,28 @@
 }
 /* Default text colour */
 .token-default {
-    -fx-fill: #000000;
+    -fx-fill: rgb(205, 214, 244)	;
 }
 
-.scope-colors {
-    -bj-background-color: white;
 
-    -bj-class-color: rgb(225, 248, 225);
+.scope-colors {
+    -bj-background-color: rgb(30, 30, 46);
+    /* -bj-background-color: white; */
+
+    -bj-class-color: rgb(30, 30, 46);
+    -bj-class-outer-color: rgb(30, 30, 46);
+    -bj-class-inner-color: rgb(30, 30, 46);
+
+    -bj-method-color: rgb(30, 30, 46);
+    -bj-method-outer-color: rgb(30, 30, 46);
+
+    -bj-selection-color: rgb(30, 30, 46);
+    -bj-selection-outer-color: rgb(30, 30, 46);
+
+    -bj-iteration-color: rgb(30, 30, 46);
+    -bj-iteration-outer-color: rgb(30, 30, 46);
+
+    /* -bj-class-color: rgb(225, 248, 225);
     -bj-class-outer-color: rgb(188, 218, 188);
     -bj-class-inner-color: rgb(210, 230, 210);
 
@@ -49,7 +81,7 @@
     -bj-selection-outer-color: rgb(188, 188, 210);
 
     -bj-iteration-color: rgb(248, 233, 248);
-    -bj-iteration-outer-color: rgb(210, 177, 210);
+    -bj-iteration-outer-color: rgb(210, 177, 210); */
 
     -bj-breakpoint-overlay-color: rgba(200, 20, 20, 0.6);
     -bj-step-overlay-color: rgba(20, 140, 20, 0.6);
@@ -70,4 +102,4 @@
 }
 .moe-editor-pane .caret {
    -fx-stroke: rgb(255, 0, 100);
-}#
+}

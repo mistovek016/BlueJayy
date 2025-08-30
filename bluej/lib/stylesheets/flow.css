@@ -1,6 +1,6 @@
 .flow-top-bar {
     -fx-padding: 0.75em 1em 0.75em 1em;
-    -fx-background-color: hsb(0, 0%, 50%), rgb(225, 225, 225);
+    -fx-background-color: hsb(0, 0%, 50%), rgb(24, 24, 37); /*YEABOI*/ /*white*/
     -fx-background-insets: 0 0 0 0, 0 0 1 0;
 }
 .flow-top-bar-buttons {
@@ -12,21 +12,25 @@
     -fx-label-padding: 0 0.3em 0 0.3em;
 }
 .margin-and-text-line {
-    -fx-background-color: white;
+    -fx-background-color: rgb(30, 30, 46); /*YEABOI*/ /*white*/
     -fx-cursor: text;
 }
 .flow-margin-line {
-    -fx-stroke: grey;
+    -fx-stroke: rgb(49, 50, 68); /*YEABOI*/ /*white*/;
 }
 .flow-margin-background {
-    -fx-background-color: white;
+    /*TODO*/
+    -fx-background-color: rgb(24, 24, 37); /*YEABOI*/ /*white*/
     -fx-cursor: default;
 }
 .margin-and-text-line:bj-margin-uncompiled .flow-margin-background {
-    -fx-background-color: hsb(0, 0%, 75%);
+    /*-fx-background-color: hsb(0, 0%, 75%);*/
+    -fx-background-color: rgb(30, 30, 46); /*YEABOI*/ /*white*/;
 }
 .margin-and-text-line:bj-margin-error .flow-margin-background {
-    -fx-background-color: hsb(0, 70%, 50%);
+    /*-fx-background-color: hsb(0, 70%, 50%);*/
+    -fx-background-color: rgb(236, 87, 129); /*YEABOI*/ /*white*/;
+    /* -fx-background-color: rgb(243, 139, 168);*/ /*YEABOI*/ /*white*/ /* actual catppuccin*/
 }
 .moe-breakpoint-icon, .moe-step-mark-icon {
     -fx-cursor: default;
@@ -40,27 +44,33 @@
     -fx-alignment: center-right;
     -fx-graphic-text-gap: 0;
     -fx-label-padding: 0 2 0 0;
-    -fx-text-fill: black;
+    -fx-text-fill: rgb(166, 173, 200);
     -fx-cursor: default;
 }
 .margin-and-text-line:bj-margin-error .flow-line-label {
-    -fx-text-fill: white;
+    -fx-text-fill: rgb(255, 255, 255); /*YEABOI*/ /*white*/ 
+    /*the text that you get when you compile and there is an error
+    this text appears on the side bar where the line numbers are*/
 }
 .text-line .flow-selection {
-    -fx-fill: hsb(211, 50%, 90%);
+    /* -fx-fill: hsb(211, 50%, 90%); */
+    -fx-fill: rgba(255, 255, 255, 0.12);
     -fx-stroke: null;
 }
 .text-line .flow-find-result {
-    -fx-fill: hsb(211, 20%, 99%);
+    -fx-fill: rgba(255, 255, 255, 0.11);
     -fx-stroke: null;
 }
 .text-line .flow-bracket-match {
-    -fx-fill: hsb(0, 0%, 70%);
+    -fx-fill: rgba(255, 255, 255, 0.3);
     -fx-stroke: null;
 }
 
 .text-line .flow-ime-input {
-    -fx-fill: hsb(180, 50%, 70%);
+    /* -fx-fill: hsb(180, 50%, 70%); */
+    /*TODO*/
+    /*what is this?*/
+    -fx-fill: rgba(255, 255, 255);
     -fx-stroke: null;
 }
 
@@ -73,5 +83,5 @@
 
 
 .line-container {
-    -fx-background-color: white;
+    -fx-background-color: rgb(30, 30, 46); /*YEABOI*/ /*white*/
 }
