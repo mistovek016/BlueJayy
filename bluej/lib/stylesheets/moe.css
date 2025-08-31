@@ -7,6 +7,7 @@
     /*This is the minimum gap; more may be added in code using the
       tile pane margins to separate different groups of buttons */
     -fx-hgap: 0.5em;
+    -fx-background-color: aqua;
 }
 .moe-top-bar-buttons > .button {
     -fx-label-padding: 0 0.3em 0 0.3em;
@@ -147,4 +148,77 @@
 .moe-step-mark-icon {
     -fx-stroke-width: 1;
     -fx-stroke-type: outside;
+}
+
+.toolbar-paste-button {
+    /* -fx-background-color: rgb(49, 50, 68); */
+    -fx-background-color: rgb(30, 30, 46);
+    -fx-text-fill: rgb(205, 214, 244);
+    -fx-border-color: rgb(205, 214, 244);
+    -fx-font-weight: bold;
+    -fx-border-width: 0.6;
+    -fx-cursor: hand;
+}
+
+.toolbar-copy-button {
+    -fx-background-color: rgb(30, 30, 46);
+    -fx-text-fill: rgb(205, 214, 244);
+    -fx-border-color: rgb(205, 214, 244);
+    -fx-font-weight: bold;
+    -fx-border-width: 0.6;
+    -fx-cursor: hand;
+}
+
+.toolbar-undo-button {
+    -fx-background-color: rgb(30, 30, 46);
+    -fx-text-fill: rgb(205, 214, 244);
+    -fx-border-color: rgb(205, 214, 244);
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-width: 0.6;
+}
+
+.toolbar-compile-button {
+    -fx-background-color: rgb(30, 30, 46);
+    -fx-text-fill: rgb(205, 214, 244);
+    -fx-border-color: rgb(205, 214, 244);
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-width: 0.6;
+}
+
+.toolbar-cut-button {
+    -fx-background-color: rgb(30, 30, 46);
+    -fx-text-fill: rgb(205, 214, 244);
+    -fx-border-color: rgb(205, 214, 244);
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-width: 0.6;
+}
+
+.toolbar-compile-button {
+    -fx-background-color: rgb(30, 30, 46);
+    -fx-text-fill: rgb(205, 214, 244);
+    -fx-border-color: rgb(205, 214, 244);
+    -fx-font-weight: bold;
+    -fx-border-width: 0.6;
+    -fx-cursor: hand;
+}
+
+.toolbar-find-button {
+    -fx-background-color: rgb(30, 30, 46);
+    -fx-text-fill: rgb(205, 214, 244);
+    -fx-border-color: rgb(205, 214, 244);
+    -fx-font-weight: bold;
+    -fx-border-width: 0.6;
+    -fx-cursor: hand;
+}
+
+.toolbar-close-button {
+    -fx-background-color: rgb(30, 30, 46);
+    -fx-text-fill: rgb(205, 214, 244);
+    -fx-font-weight: bold;
+    -fx-border-color: rgb(205, 214, 244);
+    -fx-border-width: 0.6;
+    -fx-cursor: hand;
 }

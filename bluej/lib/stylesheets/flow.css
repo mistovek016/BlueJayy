@@ -21,7 +21,7 @@
 .flow-margin-background {
     /*TODO*/
     -fx-background-color: rgb(24, 24, 37); /*YEABOI*/ /*white*/
-    -fx-cursor: default;
+    -fx-cursor: text;
 }
 .margin-and-text-line:bj-margin-uncompiled .flow-margin-background {
     /*-fx-background-color: hsb(0, 0%, 75%);*/
@@ -37,7 +37,8 @@
 }
 
 .flow-caret {
-    -fx-stroke: red;
+    -fx-stroke: rgb(242, 205, 205);
+    -fx-stroke-width: 2.25;
 }
 
 .flow-line-label {

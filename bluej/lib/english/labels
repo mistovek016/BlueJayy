@@ -211,7 +211,9 @@ editor.insert-methodLabel = Insert method
 editor.add-javadocLabel = Add method comment
 
 editor.new-findLabel = New Find
-editor.findLabel = Find...
+editor.findLabel = Find
+# editor.findLabel = Find...
+# edit by mistovek016
 editor.find-nextLabel = Find Next
 editor.find-next-backwardLabel = Find Next Backward
 editor.go-to-lineLabel = Go to line...

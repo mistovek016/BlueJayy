@@ -1,6 +1,7 @@
 /* Define named colours: */
 .root {
-    -fx-font-family: "Source Sans Pro";
+    /* -fx-font-family: "Source Sans Pro"; */
+    -fx-font-family: "Courier New";
 
     class-frame: hsb(103, 8%, 78%);
     class-frame-java: hsb(103, 4%, 85%);
